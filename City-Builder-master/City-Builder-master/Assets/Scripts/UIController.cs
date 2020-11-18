@@ -21,7 +21,7 @@ public class UIController : MonoBehaviour
 
     public void UpdateCityData()
     {
-        cityText.text = string.Format("Jobs: {0}/{1}\nCash: {2}$ (+{6}$)\nPop: {3}/{4}\nFood: {5}",
+        cityText.text = string.Format("Traballs: {0}/{1}\nDiners: {2}€ (+{6}€)\nPoblació: {3}/{4}\nMenjar: {5}",
             city.JobsCurrent,
             city.JobsCeiling,
             city.Cash,
