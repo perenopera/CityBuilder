@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Building : MonoBehaviour
 {
-	public int id;
-	public int cost;
-	public string buildingName;
-	public string description;
+    public int id;
+    public int cost;
+    public string buildingName;
+    public string description;
 }

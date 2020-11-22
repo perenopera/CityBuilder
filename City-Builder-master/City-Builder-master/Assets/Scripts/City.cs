@@ -11,14 +11,15 @@ public class City : MonoBehaviour
     public int JobsCurrent { get; set; }
     public int JobsCeiling { get; set; }
     public float Food { get; set; }
-    public int[] buildingCount = new int[4]; //0 Road; 1 House; 2 Farm; 3 Factory
+    public int[] buildingCount = new int[5]; //0 Road; 1 House; 2 Farm; 3 Factory; 4 Glass
 
     public enum buildings
     {
         Road,
         House,
         Farm,
-        Factory
+        Factory,
+        Glass
     };
     private UIController uiController;
     // Use this for initialization

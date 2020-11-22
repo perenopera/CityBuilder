@@ -13,7 +13,8 @@ public class BuildingController : MonoBehaviour
     private enum Action
     {
         create,
-        delete
+        delete,
+        Update
     };
     private Building selectedBuilding;
 
@@ -28,10 +29,17 @@ public class BuildingController : MonoBehaviour
         {
             InteractWithBoard(Action.create);
         }
-
+        else if (Input.GetMouseButtonDown(1) && Input.GetKey(KeyCode.LeftShift))
+        {
+            InteractWithBoard(Action.delete);
+        }
         if (Input.GetMouseButton(1))
         {
             InteractWithBoard(Action.delete);
+        }
+        if (Input.GetMouseButtonDown(0) && Input.GetKey(KeyCode.LeftControl))
+        {
+            InteractWithBoard(Action.Update);
         }
     }
 
@@ -63,12 +71,17 @@ public class BuildingController : MonoBehaviour
                     board.RemoveBuilding(gridPosition);
                     uiController.UpdateCityData();
                 }
+                else if (action == Action.Update && board.CheckForBuildingAtPosition(gridPosition) != null)
+                {
+                    Debug.Log("Estic fen update");
+                }
             }
         }
     }
 
     public void EnableBuilder(int buildingId)
     {
+        Debug.Log(buildingId);
         selectedBuilding = buildings[buildingId];
         Debug.Log("Selected Building: " + selectedBuilding.buildingName);
     }
