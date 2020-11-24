@@ -360,7 +360,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Fabrica (20\u20AC)"
+  m_Text: "Escola (30\u20AC)"
 --- !u!222 &155103094
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -404,7 +404,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 0.5
@@ -1615,7 +1615,7 @@ MonoBehaviour:
   - {fileID: 114457244950793724, guid: 6538136f066d65646b955beeee1d0d5f, type: 3}
   - {fileID: 114371073693087772, guid: 400c9b81c401228429aaf991f9e5e9b8, type: 3}
   - {fileID: 114494161099119458, guid: af4aebdfda1c4ca4ab1d488d7384ca1b, type: 3}
-  - {fileID: 6011256136496555838, guid: 3959f9b79ac88ac4d8690e7e6c7e3ded, type: 3}
+  - {fileID: 8018929485794395848, guid: 7ef54b2d3e02ace439543c31b7427a0a, type: 3}
   board: {fileID: 794398403}
 --- !u!1 &867125614
 GameObject:
@@ -1975,7 +1975,7 @@ GameObject:
   - component: {fileID: 1301977342}
   - component: {fileID: 1301977341}
   m_Layer: 5
-  m_Name: GlassButton
+  m_Name: SchoolButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

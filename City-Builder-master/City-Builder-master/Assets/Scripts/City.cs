@@ -19,7 +19,7 @@ public class City : MonoBehaviour
         House,
         Farm,
         Factory,
-        Glass
+        School
     };
     private UIController uiController;
     // Use this for initialization
